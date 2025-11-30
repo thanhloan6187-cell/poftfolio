@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Son | Hiep Thanh Secondary School </title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Son | Senior Software Engineer & FIDE Instructor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <a href="./index.html"><img src="./img/logo.png" /></a>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="./works.html">Works</a>
+        <a href="./hobbies.html">Hobbies</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+    </header>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">
-      <a href="./index.html"><img src="./img/logo.png" /></a>
-    </div>
-    <nav class="nav-links" id="nav-links">
-      <a href="./works.html">Works</a>
-      <a href="./hobbies.html">Hobbies</a>
-      <a href="./contact.html">Contact</a>
-    </nav>
-    <button class="menu-btn" id="menu-btn">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </button>
-  </header>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Hi, I am Son<br />Senior Software Engineer & FIDE Instructor</h2>
+        <p>
+          With over 10 years of experience in software engineering, I’ve worked
+          across key domains such as Fintech, E-commerce, Education, and Digital
+          Marketing. I specialize in modern technologies including Python,
+          React, Node.js, and Shopify, and have collaborated with clients in the
+          US, EU, Singapore, and Vietnam.
+        </p>
+        <p>
+          Alongside engineering, I am a certified FIDE School Instructor with
+          strong experience in teaching and coaching chess. I’ve guided students
+          in both rapid and blitz formats, with several earning gold prizes in
+          competitions. I’m passionate about helping learners grow—whether in IT
+          or on the chessboard.
+        </p>
+        <a href="#" class="btn">Download Resume</a>
+      </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hi, I am Son,<br>kim đồng Secondary School </h1>
-      <p>
-I am  10 year student at Kim đồng Secondary School, I love soccer and swim. 🏅 I have many medal, forexamp le medal swim, soccer,... - I usually want to watch tv and I like play the board game!
-      </p>
-      <a href="#" class="btn">Download Resume</a>
-    </div>
+      <div class="hero-image">
+        <img src="./img/me.jpg" alt="Profile photo" />
+      </div>
+    </section>
 
-    <div class="hero-image">
-      <img src="./img/me.jpg" alt="Profile photo">
-    </div>
-  </section>
+    <script>
+      // Toggle mobile menu
+      const menuBtn = document.getElementById('menu-btn');
+      const navLinks = document.getElementById('nav-links');
 
-  <script>
-    // Toggle mobile menu
-    const menuBtn = document.getElementById('menu-btn');
-    const navLinks = document.getElementById('nav-links');
-
-    menuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
-
-</body>
+      menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+  </body>
 </html>
